@@ -1,0 +1,12 @@
+<h1>Welcome to Ember.js</h1>
+{{#each model as |message|}}
+<div class="messageDiv">
+  <div class="picMessage">
+    <img class="img-circle" src={{message.pic}} />
+    <h4 class="message messageLine">{{message.message}}</h4>
+  </div>
+  <h4 class="displayName messageLine">{{message.displayName}}</h4>
+  <h4 class="useragent messageLine">{{message.useragent}}</h4>
+  <p class="date messageLine">{{message.date}}</p>
+</div>
+{{/each}}
