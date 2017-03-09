@@ -1,3 +1,7 @@
+.messagesDiv {
+  margin-top: 25px;
+}
+
 .img-circle {
   float: left;
   border-radius: 50%;
@@ -6,8 +10,13 @@
 .messageDiv {
   margin-bottom: 20px;
 }
+
 .picMessage {
   display: inline-block;
+}
+
+.message {
+  margin-top: 5px;
 }
 
 .displayName {
@@ -22,5 +31,6 @@
 .date {
   margin-top: 15px;
   margin-left: 75px;
-  opacity: 0.5;
+  font-size: 14.5px;
+  color: #778899;
 }
