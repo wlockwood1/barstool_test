@@ -12,12 +12,7 @@ test('it exists', function(assert) {
   assert.ok(!!model);
 });
 
-test('should correctly display usernames that do not contain numbers', function(assert) {
-  const newMessage = this.subject({ username: 'john.smith'});
+test('displayName', function(assert) {
+  const newMessage = this.subject({ username: 'john.smith15'});
   assert.equal(newMessage.get('displayName'), 'John Smith');
-});
-
-test('should correctly display usernames that do contain numbers', function(assert) {
-  const newMessage = this.subject({ username: 'Mary.15lewis'});
-  assert.equal(newMessage.get('displayName'), 'Mary Lewis');
 });

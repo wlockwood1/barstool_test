@@ -11,9 +11,6 @@ export default DS.Model.extend({
     var name = `${this.get('username')}`;
     var newName = name.split('.');
     return titleCase(newName[0]) + " " + titleCase(newName[1].replace(/[^a-zA-Z-]/g, ''));
-  }),
-  displayDate: Ember.computed('date', function() {
-    
   })
 });
 
